@@ -1,2 +1,2 @@
-# Competetive-codeforces-codechef-
+# Competetive-codeforces-codechef-Hackerrank
 Lockdown(sad)

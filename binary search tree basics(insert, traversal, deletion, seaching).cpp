@@ -65,9 +65,9 @@ tree* del(tree* root,int x){
 	if(root == NULL)
 	return root;
 	if(x>root->data)
-	del(root->right,x);
+	root->right = del(root->right,x);
 	else if(x<root->data)
-	del(root->left,x);
+	root->left = del(root->left,x);
 	else{
 	if(root->left!=NULL && root->right != NULL){
 		int t = maxm(root->left);

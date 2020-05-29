@@ -60,6 +60,21 @@ int maxm(tree* root){
 	}
 	return max;
 }
+void levelorder(tree *root){
+	if(root == NULL)
+		return;
+	queue<tree *> q;
+	q.push(root);
+	while(q.empty() == false){
+		tree *temp = q.front();
+		cout<<temp->data<<" ";
+		q.pop();
+		if(temp->left!=NULL)
+			q.push(temp->left);
+		if(temp->right!=NULL)
+			q.push(temp->right);
+	}
+}
 tree* del(tree* root,int x){
 	tree* temp = new tree();
 	if(root == NULL)
@@ -106,5 +121,7 @@ postorder(root);
 cout<<endl;
 del(root, 80);
 inorder(root);
+cout<<endl;
+levelorder(root);
 	return 0;
 }

@@ -6,7 +6,7 @@ public:
         if(N==0)
             return;
         
-		// Transpose of Matrix , it is inplace.
+		// Transpose of Matrix , it is inplace. // 
         for(int i=0; i<N; i++) 
         {
             for(int j=0; j<i; j++) 
